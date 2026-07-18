@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Skill Verification | SkillBridge</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/quiz.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body class="quiz-page">
+
+<nav class="navbar">
+
+<div class="logo">
+
+<i class="fa-solid fa-award"></i>
+
+<span>SkillBridge</span>
+
+</div>
+
+<ul>
+
+<li><a href="dashboard.html">Home</a></li>
+
+<li><a href="projects.html">Projects</a></li>
+
+<li><a href="learning.html">Learning</a></li>
+
+<li><a href="passport.html">Passport</a></li>
+
+</ul>
+
+</nav>
+
+<!-- ================= HOME ================= -->
+
+<section class="quiz-home">
+
+<div class="quiz-header">
+
+<h1>
+
+Skill Verification
+
+</h1>
+
+<p>
+
+Verify your practical skills by solving real-world scenario questions.
+
+Complete at least <b>2 skills</b> to unlock your Skill Passport.
+
+</p>
+
+</div>
+
+<div class="subject-grid">
+
+<div class="subject-card"
+
+onclick="startQuiz('html')">
+
+<i class="fa-brands fa-html5"></i>
+
+<h2>HTML</h2>
+
+<p>
+
+Responsive Design & Structure
+
+</p>
+
+</div>
+
+<div class="subject-card"
+
+onclick="startQuiz('css')">
+
+<i class="fa-brands fa-css3-alt"></i>
+
+<h2>CSS</h2>
+
+<p>
+
+Layouts & Styling
+
+</p>
+
+</div>
+
+<div class="subject-card"
+
+onclick="startQuiz('python')">
+
+<i class="fa-brands fa-python"></i>
+
+<h2>Python</h2>
+
+<p>
+
+Programming Logic
+
+</p>
+
+</div>
+
+<div class="subject-card"
+
+onclick="startQuiz('communication')">
+
+<i class="fa-solid fa-comments"></i>
+
+<h2>Communication</h2>
+
+<p>
+
+Professional Skills
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= QUIZ ================= -->
+
+<section
+
+id="quizBox"
+
+class="quiz-box"
+
+style="display:none;">
+
+<div class="quiz-top">
+
+<div>
+
+<h3 id="skillTitle">
+
+HTML
+
+</h3>
+
+<p id="questionCount">
+
+Question 1 / 5
+
+</p>
+
+</div>
+
+<div class="timer">
+
+<i class="fa-solid fa-clock"></i>
+
+<span id="time">
+
+60
+
+</span>
+
+s
+
+</div>
+
+</div>
+
+<div class="progress-bar">
+
+<div
+
+class="progress-fill"
+
+id="progressFill">
+
+</div>
+
+</div>
+
+<div class="question-card">
+
+<h2
+
+id="question">
+
+Question
+
+</h2>
+
+<div
+
+id="options"
+
+class="options-grid">
+
+</div>
+
+</div>
+
+<div class="quiz-navigation">
+
+<button
+
+class="btn-secondary"
+
+onclick="previousQuestion()">
+
+<i class="fa-solid fa-arrow-left"></i>
+
+Previous
+
+</button>
+
+<button
+
+class="btn-primary"
+
+onclick="nextQuestion()">
+
+Next
+
+<i class="fa-solid fa-arrow-right"></i>
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ================= RESULT ================= -->
+
+<section
+
+id="resultBox"
+
+class="result-box"
+
+style="display:none;">
+
+<div class="result-card">
+
+<div class="result-icon">
+
+🏆
+
+</div>
+
+<h1>
+
+Quiz Completed!
+
+</h1>
+
+<h2
+
+id="finalScore">
+
+80%
+
+</h2>
+
+<p
+
+id="badgeText">
+
+Badge
+
+</p>
+
+<div class="result-buttons">
+
+<a
+
+href="quiz.html"
+
+class="btn-secondary">
+
+Verify Another Skill
+
+</a>
+
+<a
+
+href="passport.html"
+
+class="btn-primary">
+
+Open Passport
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<script src="js/quiz.js"></script>
+
+</body>
+
+</html>
